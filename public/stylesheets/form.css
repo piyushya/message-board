@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #181629;
+    color: rgb(251, 231, 204);
+    font-family: "Poppins", sans-serif;
+}
+
+nav a {
+    color: rgb(234, 226, 215);
+    font-weight: bold;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(7px);
+    padding: 0.5rem 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+
+.send-mssg {
+    font-size: 1.2rem;
+    display: flex;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 2rem;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .username {
+    flex: 2;
+  }
+  
+  .message {
+    flex: 6;
+  }
+  
+  .submit {
+    flex: 1;
+    border-radius: 0.5rem;
+    background-color: #3b2d63;
+    border: 0;
+    padding: 0.7rem 1rem;
+  }
+  
+  input {
+    padding: 0.7rem 1rem;
+    background-color: #3b2d63;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 1.2rem;
+    color: rgb(251, 231, 204);
+  }
+  
+  .send-icon {
+    color: #181629;
+    width: 2rem;
+  }

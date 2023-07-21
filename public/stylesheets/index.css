@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: rgb(251, 231, 204);
+  background-color: #181629;
+}
+
+nav a {
+  color: rgb(234, 226, 215);
+  font-weight: bold;
+  background: rgba(217, 217, 217, 0.05);
+  backdrop-filter: blur(7px);
+  padding: 0.5rem 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+.mssg-board {
+  background-color: #1e1935;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+}
+
+.mssg-board::-webkit-scrollbar {
+  display: none;
+}
+
+.user {
+  background-color: rgb(23, 18, 39);
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.user-header {
+  color: #5f5185;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.name-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.time-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-message {
+  margin: 1rem 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .title-text {
+    font-size: 2rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}

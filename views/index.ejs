@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+  </head>
+  <body>
+    <nav>
+      <a>
+        <%= title %>
+      </a>
+      <ul>
+        <a href="/new"><li>Write Message</li></a>
+        <a href="/"><li>Messages</li></a>
+      </ul>
+    </nav>
+    <div class="mssg-section">
+      <div class="mssg-board" id="mssg-board">
+        <!-- User start-->
+        <% messages.forEach((message) => { %>
+          <div class="user">
+            <div class="user-header">
+              <div class="name-info">
+                <svg class="profile-icon user-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="username"><%= message.user %></span>
+              </div>
+              <div class="time-info">
+                <svg class="time-icon user-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="username"><%= message.added %></span>
+              </div>
+            </div>
+            <div class="user-message">
+              <%= message.text %>
+            </div>
+          </div>
+        <% })%>
+        <!-- User end -->
+    </div>
+  </body>
+</html>
